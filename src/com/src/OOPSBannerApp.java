@@ -2,16 +2,15 @@ package com.src;
 
 public class OOPSBannerApp {
     public static void main(String[] args) {
-        String line1 = String.join("   ", " ***** ", " ***** ", "*******", " ******");
-        String line2 = String.join("   ", "*     *", "*     *", "*      *", "*      ");
-        String line3 = String.join("   ", "*     *", "*     *", "*******", " ***** ");
-        String line4 = String.join("   ", "*     *", "*     *", "*      ", "      *");
-        String line5 = String.join("   ", " ***** ", " ***** ", "*      ", "****** ");
+        String lines[]=new String[5];
+         lines[0] = String.join("   ", " ***** ", " ***** ", "*******", " ******");
+         lines[1] = String.join("   ", "*     *", "*     *", "*      *", "*      ");
+         lines[2] = String.join("   ", "*     *", "*     *", "*******", " ***** ");
+         lines[3] = String.join("   ", "*     *", "*     *", "*      ", "      *");
+         lines[4] = String.join("   ", " ***** ", " ***** ", "*      ", "****** ");
 
-        System.out.println(line1);
-        System.out.println(line2);
-        System.out.println(line3);
-        System.out.println(line4);
-        System.out.println(line5);
+        for(String x:lines){
+            System.out.println(x);
+        }
     }
 }
